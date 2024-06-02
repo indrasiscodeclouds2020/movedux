@@ -20,7 +20,7 @@ export default function MovieCard({ movie, isWhitelisted, toggleWatchList }) {
 
 	return (
 		<div key={movie.id} className="movie-card">
-			<img src={`https://indrasiscodeclouds2020.github.io/movedux/images/${movie.image}`} alt="{movie.title}" onError={handleError} />
+			<img src={`/images/${movie.image}`} alt="{movie.title}" onError={handleError} />
 			<div className="movie-card-info">
 				<h3 className="movie-card-title"> {movie.title} </h3>
 				<div>
